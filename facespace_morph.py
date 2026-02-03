@@ -1,10 +1,4 @@
 #####       HELPFUNCTIONS FOR MORPHING OF ARTIFICIAL FACE STIMULI 
-#
-#
-#           AUTHOR: LUKAS KUNZ
-#           UNIVERSITEIT LEIDEN
-#           March 2025
-
 
 
 
