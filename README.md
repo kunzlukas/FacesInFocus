@@ -6,22 +6,24 @@ AUTHOR: Lukas Kunz, Universiteit Leiden, February 2026
 #
 
 
-Entailed files
+# Entailed files
 * facespace_morph.py
     * contains all functions needed for Jupyter notebook.
 * Morph_images.ipynb
     * contains the flow of all functions to create morphs.
 * shape_predictor_81_face_landmarks.dat
     * data file, containing a trained set of landmarks of faces.
+    * The 81-point facial landmark model was trained by Nikolay Feldman and is redistributed here under the BSD 3-Clause License.
+
 
 #
 
-Overview
+# Overview
   * This script provides a set of functions to preprocess, align, and morph artificial face stimuli. It includes grayscale conversion, landmark detection, and face morphing functionalities. The morphing process is based on facial landmarks and Delaunay triangulation to ensure smooth transitions between faces.
 
 #
 
-Dependencies
+# Dependencies
   Ensure the following Python libraries are installed before running the script:
   * opencv-python (cv2)
   * dlib
@@ -36,7 +38,7 @@ Dependencies
 
 #
 
-Functionality
+# Functionality
   * Step 1: Load Libraries & Landmark File
     * The script imports necessary libraries for image processing.
     *  The get_landmarks(p) function returns the path to the facial landmark predictor.
@@ -64,12 +66,20 @@ Functionality
 
 #
 
-Processing Folders
-    * process_folders(gray_path, output_path, p): Iterates through a directory structure, detects image pairs, and applies the morphing process.
+# Processing Folders
+* process_folders(gray_path, output_path, p): Iterates through a directory structure, detects image pairs, and applies the morphing process.
 
 #
 
-Notes
+# Third-party components
+
+This repository includes `shape_predictor_81_face_landmarks.dat`
+by Nikolay Feldman (2019), licensed under the BSD 3-Clause License.
+See `LICENSE-shape-predictor-81.txt` for details.
+
+#
+
+# Notes
 * Ensure the facial landmark model (shape_predictor_68_face_landmarks.dat) is available.
 * The script works best with aligned and high-quality face images.
 
