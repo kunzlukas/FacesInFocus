@@ -1,10 +1,10 @@
 #### README File for Faces in Focus - Morphing Scripts
 #
-#
-# AUTHOR: Lukas Kunz
-# Universiteit Leiden
-# MARCH 2025
-#
+
+AUTHOR: Lukas Kunz
+Universiteit Leiden
+MARCH 2025
+
 #
 
 
@@ -17,7 +17,6 @@ Entailed files
     data file, containing a trained set of landmarks of faces.
 
 #
-#
 
 Overview
   This script provides a set of functions to preprocess, align, and morph
@@ -26,7 +25,6 @@ Overview
   based on facial landmarks and Delaunay triangulation to ensure smooth
   transitions between faces.
 
-#
 #
 
 Dependencies
@@ -42,7 +40,6 @@ Dependencies
   You may install missing dependencies using:
   pip install opencv-python dlib numpy pillow matplotlib
 
-#
 #
 
 Functionality
@@ -72,19 +69,16 @@ Functionality
         ◦ doMorphing(img1, img2, duration, frame_rate, output_path, ...): Integrates all morphing steps into a single function.
 
 #
-#
 
   Processing Folders
     • process_folders(gray_path, output_path, p): Iterates through a directory structure, detects image pairs, and applies the morphing process.
 
-#
 #
 
 Notes
   • Ensure the facial landmark model (shape_predictor_68_face_landmarks.dat) is available.
   • The script works best with aligned and high-quality face images.
 
-#
 #
 
 Contact: Lukas Kunz, Universiteit Leiden
